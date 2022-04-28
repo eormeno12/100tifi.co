@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'RadioCanadaRegular';
+    src: url(../assets/fonts/radioCanada_400..woff);
+}
+
+@font-face {
+    font-family: 'RadioCanadaBold';
+    src: url(../assets/fonts/radioCanada_700..woff);
+}
+
+:root {
+    --main-color: #284f4e;
+    --background-color: #f1f8d78a;
+    --white: #ffffff;
+    --lg: 4rem;
+    --md: 2rem;
+    --sm: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'RadioCanadaRegular';
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100%;
+    height: 120px;
+}
+
+a {
+    text-decoration: none;
+}
+.header-main {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    padding: 16px 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 4px black;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav a {
+    font-size: var(--md);
+    color: var(--main-color);
+}
+
+main {
+    padding: 16px;
+    margin: 0 90px;
+}
+
+main section .characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+}
+
+.characters .character-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px black;
+    background-color: var(--main-color);
+}
+
+.characters .character-item a {
+    width: 100%;
+}
+
+.characters .character-item h2 {
+    margin: 12px 0;
+    color: var(--white);
+    font-size: var(--md);
+    text-align: center;
+}
+
+.characters .character-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.characters-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.characters-inner .character-card img {
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.characters-inner .character-card h2 {
+    margin-top: 12px;
+    font-size: var(--lg);
+    color: var(--main-color);
+}
+
+.characters-inner .character-card:nth-child(2) {
+    margin-left: 32px;
+}
+
+.characters-inner .character-card:nth-child(2) h3 {
+    margin-bottom: 24px;
+    color: var(--main-color);
+    font-size: var(--md);
+    font-family: 'RadioCanadaBold';
+}
+
+.characters-inner .character-card:nth-child(2) h3 span {
+    font-family: 'RadioCanadaRegular';
+}
+
+.error404 h2 {
+    font-size: var(--lg);
+    color: var(--main-color);
+    text-align: center;
+}
