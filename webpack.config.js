@@ -22,12 +22,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new HTMLPlugin([
-            {
-                inject: true,
-                template: './public/index.html',
-                filename: './index.html'
-            }
-        ])
+        new HTMLPlugin({
+            inject: true,
+            template: './public/index.html',
+            filename: './index.html'
+        })
     ]
 }
